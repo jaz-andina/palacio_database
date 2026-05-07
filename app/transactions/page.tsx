@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { Transaction } from '@/types/transaction'
 
-const OPENING_BALANCE = 1422.82
+const OPENING_BALANCE = 14226.82
 const OPENING_DATE = '2026-05-07'
 
 const CATEGORIES = [
@@ -65,6 +65,11 @@ export default function TransactionsPage() {
   useEffect(() => {
     fetchTransactions()
   }, [])
+
+  async function handleDelete(id: number) {
+    await supabase.from('transactions').delete().eq('id', id)
+    setTransactions((prev) => prev.filter((t) => t.id !== id))
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -299,7 +304,7 @@ export default function TransactionsPage() {
             <table className="min-w-full text-sm border border-gray-200 rounded">
               <thead className="bg-gray-100 text-gray-700">
                 <tr>
-                  {['Date', 'Category', 'Type', 'Description', 'Amount', 'Paid By', 'Belongs To', 'Notes'].map(
+                  {['Date', 'Category', 'Type', 'Description', 'Amount', 'Paid By', 'Belongs To', 'Notes', ''].map(
                     (h) => (
                       <th key={h} className="text-left px-3 py-2 whitespace-nowrap font-medium">
                         {h}
@@ -321,6 +326,15 @@ export default function TransactionsPage() {
                     <td className="px-3 py-2 whitespace-nowrap">{t.paid_by}</td>
                     <td className="px-3 py-2 whitespace-nowrap">{t.belongs_to}</td>
                     <td className="px-3 py-2 text-gray-500">{t.notes}</td>
+                    <td className="px-3 py-2">
+                      <button
+                        onClick={() => handleDelete(t.id)}
+                        className="text-gray-300 hover:text-red-500 transition-colors leading-none"
+                        title="Delete transaction"
+                      >
+                        ×
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
