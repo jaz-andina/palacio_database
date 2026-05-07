@@ -1,0 +1,703 @@
+date,month,type,category,subcategory,description,amount,paid_by,belongs_to,invoice_url,notes
+2022-02-01,2022-02,expense,admin,social_security,Social Security,22.62,,The Palace,,
+2022-02-01,2022-02,expense,salaries,management,Management Salary,57.92,,The Palace,,
+2022-03-01,2022-03,expense,admin,social_security,Social Security,244.99,,The Palace,,
+2022-03-01,2022-03,expense,admin,accountant,Accountant,184.5,,The Palace,,
+2022-03-01,2022-03,expense,salaries,management,Management Salary,705.0,,The Palace,,
+2022-04-01,2022-04,expense,utilities,electricity,Electricity (EDP),60.87,,The Palace,,
+2022-04-01,2022-04,expense,utilities,internet,Internet (Altice),26.19,,The Palace,,
+2022-04-01,2022-04,expense,admin,social_security,Social Security,244.99,,The Palace,,
+2022-04-01,2022-04,expense,admin,accountant,Accountant,184.5,,The Palace,,
+2022-04-01,2022-04,expense,salaries,management,Management Salary,705.0,,The Palace,,
+2022-05-01,2022-05,expense,utilities,electricity,Electricity (EDP),57.42,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-05-01,2022-05,expense,utilities,internet,Internet (Altice),38.99,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-05-01,2022-05,expense,admin,social_security,Social Security,244.99,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-05-01,2022-05,expense,admin,accountant,Accountant,184.5,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-05-01,2022-05,expense,salaries,management,Management Salary,705.0,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-05-01,2022-05,expense,taxes,rental_tax,Rental Income Tax (10% withholding),170.0,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-05-01,2022-05,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-05-01,2022-05,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,2 rent + 2 deposito / Seguro 226.91 EUR contratado ANUAL hasta MAYO 2023
+2022-06-01,2022-06,expense,utilities,electricity,Electricity (EDP),7.81,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,expense,utilities,internet,Internet (Altice),38.99,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,expense,admin,social_security,Social Security,244.99,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,expense,admin,accountant,Accountant,184.5,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,expense,salaries,management,Management Salary,705.0,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,expense,taxes,rental_tax,Rental Income Tax (10% withholding),170.0,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,expense,maintenance,maintenance,Maintenance,423.88,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-06-01,2022-06,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,Impuestos Contratos 10% / Impuestos retencion IRS / Certidao Permanente para banco/ Fees transfer zermatt
+2022-07-01,2022-07,expense,utilities,electricity,Electricity (EDP),31.48,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,utilities,internet,Internet (Altice),38.99,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,utilities,gas,Gas,117.0,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,admin,social_security,Social Security,244.99,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,admin,accountant,Accountant,184.5,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,salaries,management,Management Salary,705.0,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,taxes,rental_tax,Rental Income Tax (10% withholding),212.0,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,cleaning,cleaning,Cleaning,75.0,,The Palace,,IGCP??
+2022-07-01,2022-07,expense,maintenance,maintenance,Maintenance,250.0,,The Palace,,IGCP??
+2022-07-01,2022-07,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,IGCP??
+2022-07-01,2022-07,income,rental_income,attic_rental,Attic Rental Income,420.0,,The Palace,,IGCP??
+2022-08-01,2022-08,expense,utilities,electricity,Electricity (EDP),32.2,,The Palace,,
+2022-08-01,2022-08,expense,utilities,internet,Internet (Altice),38.99,,The Palace,,
+2022-08-01,2022-08,expense,utilities,water,Water (SMAS),24.86,,The Palace,,
+2022-08-01,2022-08,expense,admin,social_security,Social Security,244.99,,The Palace,,
+2022-08-01,2022-08,expense,admin,accountant,Accountant,184.5,,The Palace,,
+2022-08-01,2022-08,expense,admin,bank_fees,Bank Fees (Millenium),15.0,,The Palace,,
+2022-08-01,2022-08,expense,salaries,management,Management Salary,705.0,,The Palace,,
+2022-08-01,2022-08,expense,taxes,rental_tax,Rental Income Tax (10% withholding),255.0,,The Palace,,
+2022-08-01,2022-08,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,
+2022-08-01,2022-08,expense,cleaning,cleaning,Cleaning,20.0,,The Palace,,
+2022-08-01,2022-08,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,
+2022-08-01,2022-08,income,rental_income,attic_rental,Attic Rental Income,850.0,,The Palace,,
+2022-09-01,2022-09,expense,utilities,electricity,Electricity (EDP),30.84,,The Palace,,
+2022-09-01,2022-09,expense,utilities,internet,Internet (Altice),38.99,,The Palace,,
+2022-09-01,2022-09,expense,utilities,water,Water (SMAS),113.72,,The Palace,,
+2022-09-01,2022-09,expense,utilities,gas,Gas,109.8,,The Palace,,
+2022-09-01,2022-09,expense,admin,social_security,Social Security,244.99,,The Palace,,
+2022-09-01,2022-09,expense,admin,accountant,Accountant,184.5,,The Palace,,
+2022-09-01,2022-09,expense,admin,bank_fees,Bank Fees (Millenium),15.0,,The Palace,,
+2022-09-01,2022-09,expense,salaries,management,Management Salary,705.0,,The Palace,,
+2022-09-01,2022-09,expense,taxes,rental_tax,Rental Income Tax (10% withholding),255.0,,The Palace,,
+2022-09-01,2022-09,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,
+2022-09-01,2022-09,expense,cleaning,cleaning,Cleaning,20.0,,The Palace,,
+2022-09-01,2022-09,expense,maintenance,maintenance,Maintenance,250.09,,The Palace,,
+2022-09-01,2022-09,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,
+2022-09-01,2022-09,income,rental_income,jaz_apartment,JAZ Apartment Rental,450.0,,The Palace,,
+2022-09-01,2022-09,income,rental_income,attic_rental,Attic Rental Income,850.0,,The Palace,,
+2022-10-01,2022-10,expense,utilities,electricity,Electricity (EDP),81.62,,The Palace,,
+2022-10-01,2022-10,expense,utilities,internet,Internet (Altice),38.99,,The Palace,,
+2022-10-01,2022-10,expense,utilities,water,Water (SMAS),251.72,,The Palace,,
+2022-10-01,2022-10,expense,admin,social_security,Social Security,244.99,,The Palace,,
+2022-10-01,2022-10,expense,admin,accountant,Accountant,209.1,,The Palace,,
+2022-10-01,2022-10,expense,admin,bank_fees,Bank Fees (Millenium),15.0,,The Palace,,
+2022-10-01,2022-10,expense,salaries,management,Management Salary,705.0,,The Palace,,
+2022-10-01,2022-10,expense,taxes,rental_tax,Rental Income Tax (10% withholding),250.0,,The Palace,,
+2022-10-01,2022-10,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,
+2022-10-01,2022-10,expense,cleaning,cleaning,Cleaning,20.0,,The Palace,,
+2022-10-01,2022-10,expense,maintenance,maintenance,Maintenance,49.89,,The Palace,,
+2022-10-01,2022-10,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,
+2022-10-01,2022-10,income,rental_income,jaz_apartment,JAZ Apartment Rental,455.0,,The Palace,,
+2022-10-01,2022-10,income,rental_income,attic_rental,Attic Rental Income,800.0,,The Palace,,
+2022-11-01,2022-11,expense,utilities,electricity,Electricity (EDP),93.24,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,utilities,internet,Internet (Altice),53.75,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,utilities,water,Water (SMAS),93.98,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,admin,social_security,Social Security,244.99,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,admin,accountant,Accountant,209.1,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,admin,bank_fees,Bank Fees (Millenium),15.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,salaries,management,Management Salary,705.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,taxes,rental_tax,Rental Income Tax (10% withholding),255.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,cleaning,cleaning,Cleaning,12.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,expense,maintenance,maintenance,Maintenance,571.22,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,income,rental_income,jaz_apartment,JAZ Apartment Rental,450.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-11-01,2022-11,income,rental_income,attic_rental,Attic Rental Income,850.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,utilities,electricity,Electricity (EDP),68.78,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,utilities,internet,Internet (Altice),53.75,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,utilities,water,Water (SMAS),92.25,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,admin,social_security,Social Security,244.99,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,admin,accountant,Accountant,209.1,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,admin,bank_fees,Bank Fees (Millenium),15.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,salaries,management,Management Salary,705.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,taxes,rental_tax,Rental Income Tax (10% withholding),200.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,cleaning,cleaning,Cleaning,24.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,expense,maintenance,maintenance,Maintenance,385.49,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,income,rental_income,jaz_apartment,JAZ Apartment Rental,505.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2022-12-01,2022-12,income,rental_income,attic_rental,Attic Rental Income,300.0,,The Palace,,Cobraron de mas en MEO llamar!!
+2023-01-01,2023-01,expense,utilities,electricity,Electricity (EDP),166.52,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,utilities,phone,Cell Phone (NOS),30.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,utilities,water,Water (SMAS),258.93,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,admin,social_security,Social Security,264.1,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,admin,accountant,Accountant (Contabilidade),209.1,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,salaries,management,Management Salary,760.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,maintenance,garden,Garden,65.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,admin,admin_fee,Admin Fee (10% rental),170.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,expense,maintenance,extras,Maintenance Extras (Meru Mill),8.99,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-01-01,2023-01,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,utilities,electricity,Electricity (EDP),127.48,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,utilities,phone,Cell Phone (NOS),30.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,utilities,water,Water (SMAS),88.89,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,admin,social_security,Social Security,300.89,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,admin,accountant,Accountant (Contabilidade),227.55,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,salaries,management,Management Salary,760.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,maintenance,garden,Garden,40.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,admin,admin_fee,Admin Fee (10% rental),170.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-02-01,2023-02,income,rental_income,fixed_rental,Fixed Rental Income,1700.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,utilities,electricity,Electricity (EDP),90.58,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,utilities,phone,Cell Phone (NOS),32.34,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,utilities,water,Water (SMAS),128.31,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,utilities,gas,Gas,116.5,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,admin,social_security,Social Security,264.1,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,admin,accountant,Accountant (Contabilidade),209.1,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,salaries,management,Management Salary,760.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,maintenance,garden,Garden,452.61,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,admin,admin_fee,Admin Fee (10% rental),255.6,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,expense,maintenance,extras,Maintenance Extras (Meru Mill),707.24,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,income,rental_income,fixed_rental,Fixed Rental Income,1800.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-03-01,2023-03,income,rental_income,attic_rental,Attic Rental Income,756.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,utilities,electricity,Electricity (EDP),93.93,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,utilities,phone,Cell Phone (NOS),32.34,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,utilities,water,Water (SMAS),108.18,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,admin,social_security,Social Security,264.1,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,admin,accountant,Accountant (Contabilidade),209.1,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,salaries,management,Management Salary,760.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,maintenance,garden,Garden,369.69,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,admin,admin_fee,Admin Fee (10% rental),258.8,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,insurance,property_insurance,Property Insurance (AGEAS),18.9,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,cleaning,cleaning,Cleaning,108.1,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,expense,maintenance,extras,Maintenance Extras (no invoice),3020.5,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,income,rental_income,fixed_rental,Fixed Rental Income,1800.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-04-01,2023-04,income,rental_income,attic_rental,Attic Rental Income,788.0,,The Palace,,Alq Jaz es 0 pq no estoy cobrando Vilela
+2023-05-01,2023-05,expense,utilities,electricity,Electricity (EDP),72.12,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,utilities,phone,Cell Phone (NOS),67.68,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,utilities,water,Water (SMAS),92.45,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,utilities,gas,Gas,116.5,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,admin,social_security,Social Security,264.1,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,admin,accountant,Accountant (Contabilidade),209.1,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,salaries,management,Management Salary,760.0,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,maintenance,garden,Garden,90.0,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,admin,admin_fee,Admin Fee (10% rental),235.0,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,cleaning,cleaning,Cleaning,81.18,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,maintenance,extras,Maintenance Extras (Meru Mill),416.74,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,maintenance,extras,Maintenance Extras (Meru N26),567.65,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,expense,maintenance,extras,Maintenance Extras (no invoice),50.0,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,income,rental_income,fixed_rental,Fixed Rental Income,1800.0,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-05-01,2023-05,income,rental_income,attic_rental,Attic Rental Income,549.99,,The Palace,,AGEAS pago anual 247.65 / Fuen (455) y Babi (530) depositos a Jaz directo.
+2023-06-01,2023-06,expense,utilities,electricity,Electricity (EDP),69.61,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,utilities,phone,Cell Phone (NOS),32.34,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,utilities,water,Water (SMAS),108.18,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,admin,social_security,Social Security,264.1,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,admin,accountant,Accountant (Contabilidade),209.1,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,salaries,management,Management Salary,760.0,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,admin,admin_fee,Admin Fee (10% rental),214.5,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,cleaning,cleaning,Cleaning,121.95,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,maintenance,extras,Maintenance Extras (Meru Mill),158.72,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,expense,maintenance,extras,Maintenance Extras (Meru N26),8445.39,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,income,rental_income,fixed_rental,Fixed Rental Income,1905.0,,The Palace,,Social sec pagado por Meru N26
+2023-06-01,2023-06,income,rental_income,attic_rental,Attic Rental Income,240.0,,The Palace,,Social sec pagado por Meru N26
+2023-07-01,2023-07,expense,utilities,electricity,Electricity (EDP),138.8,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,utilities,phone,Cell Phone (NOS),32.34,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,utilities,water,Water (SMAS),456.02,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,utilities,gas,Gas,108.0,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,admin,social_security,Social Security,264.1,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,admin,accountant,Accountant (Contabilidade),184.3,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,salaries,management,Management Salary,760.0,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,maintenance,garden,Garden,156.5,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,admin,admin_fee,Admin Fee (10% rental),306.0,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,cleaning,cleaning,Cleaning,67.7,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,expense,maintenance,extras,Maintenance Extras (Meru Mill),362.68,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,income,rental_income,fixed_rental,Fixed Rental Income,1800.0,,The Palace,,Ingreso Deposito Alessio 1150
+2023-07-01,2023-07,income,rental_income,attic_rental,Attic Rental Income,1260.0,,The Palace,,Ingreso Deposito Alessio 1150
+2023-08-01,2023-08,expense,utilities,electricity,Electricity (EDP),184.01,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,utilities,phone,Cell Phone (NOS),32.34,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,utilities,water,Water (SMAS),98.54,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,admin,social_security,Social Security,264.1,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,admin,accountant,Accountant (Contabilidade),184.3,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,salaries,management,Management Salary,760.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,maintenance,garden,Garden,247.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,admin,admin_fee,Admin Fee (10% rental),310.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,cleaning,cleaning,Cleaning,77.75,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,maintenance,extras,Maintenance Extras (Meru Mill),343.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,expense,maintenance,extras,Maintenance Extras (no invoice),266.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,income,rental_income,fixed_rental,Fixed Rental Income,2100.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-08-01,2023-08,income,rental_income,attic_rental,Attic Rental Income,1000.0,,The Palace,,Ingreso Deposito Fuen - ya devuelto a jaz management abril y junio
+2023-09-01,2023-09,expense,utilities,electricity,Electricity (EDP),129.95,,The Palace,,
+2023-09-01,2023-09,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,
+2023-09-01,2023-09,expense,utilities,phone,Cell Phone (NOS),32.34,,The Palace,,
+2023-09-01,2023-09,expense,utilities,water,Water (SMAS),98.54,,The Palace,,
+2023-09-01,2023-09,expense,utilities,gas,Gas,116.5,,The Palace,,
+2023-09-01,2023-09,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,
+2023-09-01,2023-09,expense,admin,social_security,Social Security,264.1,,The Palace,,
+2023-09-01,2023-09,expense,admin,accountant,Accountant (Contabilidade),184.3,,The Palace,,
+2023-09-01,2023-09,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,
+2023-09-01,2023-09,expense,salaries,management,Management Salary,760.0,,The Palace,,
+2023-09-01,2023-09,expense,maintenance,garden,Garden,134.0,,The Palace,,
+2023-09-01,2023-09,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,
+2023-09-01,2023-09,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,
+2023-09-01,2023-09,expense,cleaning,cleaning,Cleaning,108.24,,The Palace,,
+2023-09-01,2023-09,expense,maintenance,extras,Maintenance Extras (Meru Mill),62.72,,The Palace,,
+2023-09-01,2023-09,expense,maintenance,extras,Maintenance Extras (no invoice),60.0,,The Palace,,
+2023-09-01,2023-09,income,rental_income,fixed_rental,Fixed Rental Income,2120.0,,The Palace,,
+2023-09-01,2023-09,income,rental_income,attic_rental,Attic Rental Income,720.0,,The Palace,,
+2023-10-01,2023-10,expense,utilities,electricity,Electricity (EDP),139.93,,The Palace,,
+2023-10-01,2023-10,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,
+2023-10-01,2023-10,expense,utilities,phone,Cell Phone (NOS),32.34,,The Palace,,
+2023-10-01,2023-10,expense,utilities,water,Water (SMAS),674.0,,The Palace,,
+2023-10-01,2023-10,expense,utilities,phone,Woo Cell Phone,10.0,,The Palace,,
+2023-10-01,2023-10,expense,admin,social_security,Social Security,264.1,,The Palace,,
+2023-10-01,2023-10,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,
+2023-10-01,2023-10,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,
+2023-10-01,2023-10,expense,salaries,management,Management Salary,760.0,,The Palace,,
+2023-10-01,2023-10,expense,maintenance,garden,Garden,196.34,,The Palace,,
+2023-10-01,2023-10,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,
+2023-10-01,2023-10,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,
+2023-10-01,2023-10,expense,cleaning,cleaning,Cleaning,59.75,,The Palace,,
+2023-10-01,2023-10,expense,maintenance,extras,Maintenance Extras (Meru Mill),565.15,,The Palace,,
+2023-10-01,2023-10,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,
+2023-10-01,2023-10,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,
+2023-11-01,2023-11,expense,utilities,electricity,Electricity (EDP),233.62,,The Palace,,
+2023-11-01,2023-11,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,
+2023-11-01,2023-11,expense,utilities,phone,Cell Phone (NOS),6.9,,The Palace,,
+2023-11-01,2023-11,expense,utilities,water,Water (SMAS),433.64,,The Palace,,
+2023-11-01,2023-11,expense,utilities,gas,Gas,114.5,,The Palace,,
+2023-11-01,2023-11,expense,admin,social_security,Social Security,264.1,,The Palace,,
+2023-11-01,2023-11,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,
+2023-11-01,2023-11,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,
+2023-11-01,2023-11,expense,salaries,management,Management Salary,760.0,,The Palace,,
+2023-11-01,2023-11,expense,maintenance,garden,Garden,66.5,,The Palace,,
+2023-11-01,2023-11,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,
+2023-11-01,2023-11,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,
+2023-11-01,2023-11,expense,cleaning,cleaning,Cleaning,86.81,,The Palace,,
+2023-11-01,2023-11,expense,maintenance,extras,Maintenance Extras (Meru Mill),101.55,,The Palace,,
+2023-11-01,2023-11,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,
+2023-11-01,2023-11,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,
+2023-12-01,2023-12,expense,utilities,electricity,Electricity (EDP),226.59,,The Palace,,
+2023-12-01,2023-12,expense,utilities,internet,Internet (MEO),38.99,,The Palace,,
+2023-12-01,2023-12,expense,utilities,phone,Cell Phone (NOS),32.68,,The Palace,,
+2023-12-01,2023-12,expense,utilities,water,Water (SMAS),107.8,,The Palace,,
+2023-12-01,2023-12,expense,admin,social_security,Social Security,264.1,,The Palace,,
+2023-12-01,2023-12,expense,admin,accountant,Accountant (Contabilidade),369.0,,The Palace,,
+2023-12-01,2023-12,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,
+2023-12-01,2023-12,expense,salaries,management,Management Salary,760.0,,The Palace,,
+2023-12-01,2023-12,expense,maintenance,garden,Garden,137.75,,The Palace,,
+2023-12-01,2023-12,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,
+2023-12-01,2023-12,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,
+2023-12-01,2023-12,expense,cleaning,cleaning,Cleaning,27.03,,The Palace,,
+2023-12-01,2023-12,expense,maintenance,extras,Maintenance Extras (Meru Mill),751.63,,The Palace,,
+2023-12-01,2023-12,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,
+2023-12-01,2023-12,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,
+2024-01-01,2024-01,expense,utilities,electricity,Electricity (IBERDROLA),193.8,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,utilities,internet,Internet (NOS),38.99,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,utilities,phone,Cell Phone (NOS),34.77,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,utilities,water,Water (SMAS),70.49,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,utilities,gas,Gas,114.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,admin,social_security,Social Security,264.1,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,cleaning,cleaning,Cleaning,27.06,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,taxes,property_tax,Property Taxes,201.97,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,expense,maintenance,extras,Maintenance Extras,732.99,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-01-01,2024-01,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,utilities,electricity,Electricity (IBERDROLA),221.63,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,utilities,internet,Internet (NOS),40.59,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,utilities,phone,Cell Phone (NOS),95.19,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,utilities,water,Water (SMAS),107.8,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,maintenance,garden,Garden,209.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,taxes,property_tax,Property Taxes,773.06,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,expense,maintenance,extras,Maintenance Extras,166.99,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-02-01,2024-02,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,utilities,electricity,Electricity (IBERDROLA),206.59,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,utilities,internet,Internet (NOS),40.59,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,utilities,phone,Cell Phone (NOS),33.87,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,utilities,water,Water (SMAS),120.39,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,utilities,gas,Gas,112.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,cleaning,cleaning,Cleaning,54.12,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,expense,maintenance,extras,Maintenance Extras,565.03,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-03-01,2024-03,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,utilities,electricity,Electricity (IBERDROLA),221.85,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,utilities,internet,Internet (NOS),40.59,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,utilities,phone,Cell Phone (NOS),33.87,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,utilities,water,Water (SMAS),76.06,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,maintenance,garden,Garden,115.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,insurance,property_insurance,Property Insurance (AGEAS),20.64,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,cleaning,cleaning,Cleaning,54.12,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,expense,maintenance,extras,Maintenance Extras,376.42,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-04-01,2024-04,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,utilities,electricity,Electricity (IBERDROLA),178.91,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,utilities,internet,Internet (NOS),40.59,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,utilities,phone,Cell Phone (NOS),4.77,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,utilities,water,Water (SMAS),95.99,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,utilities,gas,Gas,116.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,maintenance,garden,Garden,60.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,admin,admin_fee,Admin Fee (10% rental),291.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,cleaning,cleaning,Cleaning,54.12,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,taxes,property_tax,Property Taxes,181.05,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,expense,maintenance,extras,Maintenance Extras,124.77,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,income,rental_income,fixed_rental,Fixed Rental Income,2915.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-05-01,2024-05,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,utilities,electricity,Electricity (IBERDROLA),178.91,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,utilities,internet,Internet (NOS),84.44,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,utilities,phone,Cell Phone (NOS),9.47,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,utilities,water,Water (SMAS),264.79,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,admin,admin_fee,Admin Fee (10% rental),299.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,taxes,property_tax,Property Taxes,183.32,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,expense,maintenance,extras,Maintenance Extras,28.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,income,rental_income,fixed_rental,Fixed Rental Income,2990.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-06-01,2024-06,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,utilities,electricity,Electricity (IBERDROLA),44.48,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,utilities,internet,Internet (NOS),36.81,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,utilities,water,Water (SMAS),132.56,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,utilities,gas,Gas,116.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,admin,admin_fee,Admin Fee (10% rental),299.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,taxes,property_tax,Property Taxes,663.86,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,expense,maintenance,extras,Maintenance Extras,250.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,income,rental_income,fixed_rental,Fixed Rental Income,2990.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-07-01,2024-07,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,utilities,electricity,Electricity (IBERDROLA),2.3,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,utilities,internet,Internet (NOS),37.18,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,utilities,water,Water (SMAS),161.92,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,utilities,gas,Gas,116.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,admin,admin_fee,Admin Fee (10% rental),297.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,expense,maintenance,extras,Maintenance Extras,354.98,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,income,rental_income,fixed_rental,Fixed Rental Income,2970.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-08-01,2024-08,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,utilities,electricity,Electricity (IBERDROLA),76.42,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,utilities,internet,Internet (NOS),37.18,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,utilities,water,Water (SMAS),301.62,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,admin,admin_fee,Admin Fee (10% rental),297.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,expense,maintenance,extras,Maintenance Extras,121.77,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,income,rental_income,fixed_rental,Fixed Rental Income,2970.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-09-01,2024-09,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2024-10-01,2024-10,expense,utilities,electricity,Electricity (IBERDROLA),81.7,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,utilities,internet,Internet (NOS),37.18,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,utilities,phone,Cell Phone (NOS),22.5,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,utilities,water,Water (SMAS),193.04,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,utilities,gas,Gas,118.0,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,maintenance,garden,Garden,90.0,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,admin,admin_fee,Admin Fee (10% rental),297.0,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,cleaning,cleaning,Cleaning,27.06,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,taxes,property_tax,Property Taxes,181.06,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,expense,maintenance,extras,Maintenance Extras,513.28,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,income,rental_income,fixed_rental,Fixed Rental Income,2970.0,,The Palace,,DEVUELTO EN SPLIT
+2024-10-01,2024-10,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,utilities,electricity,Electricity (IBERDROLA),113.12,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,utilities,internet,Internet (NOS),37.18,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,utilities,phone,Cell Phone (NOS),22.5,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,utilities,water,Water (SMAS),225.23,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,admin,admin_fee,Admin Fee (10% rental),297.0,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,cleaning,cleaning,Cleaning,54.12,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,expense,maintenance,extras,Maintenance Extras,9.45,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,income,rental_income,fixed_rental,Fixed Rental Income,2970.0,,The Palace,,DEVUELTO EN SPLIT
+2024-11-01,2024-11,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN SPLIT
+2024-12-01,2024-12,expense,utilities,electricity,Electricity (IBERDROLA),146.42,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,utilities,internet,Internet (NOS),55.76,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,utilities,phone,Cell Phone (NOS),22.5,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,utilities,water,Water (SMAS),36.79,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,utilities,gas,Gas,122.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,admin,social_security,Social Security,284.95,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,admin,accountant,Accountant (Contabilidade),184.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,admin,bank_fees,Bank Fees,15.6,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,salaries,management,Management Salary,820.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,admin,admin_fee,Admin Fee (10% rental),297.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,cleaning,cleaning,Cleaning,81.18,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,expense,maintenance,extras,Maintenance Extras,695.48,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,income,rental_income,fixed_rental,Fixed Rental Income,2970.0,,The Palace,,DEVUELTO EN N26 MERUPROP
+2024-12-01,2024-12,income,rental_income,vilela_rental,Vilela Rental Income,700.0,,Vilela,,DEVUELTO EN N26 MERUPROP
+2025-01-01,2025-01,expense,utilities,electricity,Electricity (IBERDROLA),159.73,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,utilities,phone,Cell Phone (NOS),33.5,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,utilities,water,Water (SMAS),166.07,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,expense,maintenance,extras,Maintenance Extras,206.59,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado a N26 Meruprop
+2025-01-01,2025-01,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,utilities,electricity,Electricity (IBERDROLA),183.29,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,utilities,phone,Cell Phone (NOS),38.31,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,utilities,water,Water (SMAS),157.2,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,utilities,gas,Gas,126.5,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,maintenance,garden,Garden,90.0,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado a N26 Meruprop
+2025-02-01,2025-02,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,utilities,electricity,Electricity (IBERDROLA),177.58,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,utilities,phone,Cell Phone (NOS),27.14,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,utilities,water,Water (SMAS),63.04,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,expense,maintenance,extras,Maintenance Extras,40.0,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado a N26 Meruprop
+2025-03-01,2025-03,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado a N26 Meruprop
+2025-04-01,2025-04,expense,utilities,electricity,Electricity (IBERDROLA),253.55,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,utilities,phone,Cell Phone (NOS),33.25,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,utilities,water,Water (SMAS),124.39,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,utilities,gas,Gas,126.5,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,expense,taxes,property_tax,Property Taxes,4.4,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado en cash USD
+2025-04-01,2025-04,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado en cash USD
+2025-05-01,2025-05,expense,utilities,electricity,Electricity (IBERDROLA),141.77,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,utilities,phone,Cell Phone (NOS),21.89,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,utilities,water,Water (SMAS),141.07,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,maintenance,garden,Garden,82.5,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en split
+2025-05-01,2025-05,expense,taxes,property_tax,Property Taxes,198.7,,The Palace,,pagado en split
+2025-05-01,2025-05,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado en split
+2025-05-01,2025-05,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado en split
+2025-06-01,2025-06,expense,utilities,electricity,Electricity (IBERDROLA),109.92,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,utilities,phone,Cell Phone (NOS),24.85,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,utilities,water,Water (SMAS),85.03,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,utilities,gas,Gas,126.5,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,cleaning,cleaning,Cleaning,28.0,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,taxes,property_tax,Property Taxes,80.0,,The Palace,,pagado en split
+2025-06-01,2025-06,expense,maintenance,extras,Maintenance Extras,1625.0,,The Palace,,pagado en split
+2025-06-01,2025-06,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado en split
+2025-06-01,2025-06,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado en split
+2025-07-01,2025-07,expense,utilities,electricity,Electricity (IBERDROLA),91.1,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,utilities,phone,Cell Phone (NOS),37.96,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,utilities,water,Water (SMAS),105.65,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en split
+2025-07-01,2025-07,expense,taxes,property_tax,Property Taxes,66.84,,The Palace,,pagado en split
+2025-07-01,2025-07,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado en split
+2025-07-01,2025-07,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado en split
+2025-08-01,2025-08,expense,utilities,electricity,Electricity (IBERDROLA),94.59,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,utilities,phone,Cell Phone (NOS),58.65,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,utilities,water,Water (SMAS),124.94,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,utilities,gas,Gas,122.5,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,admin,admin_fee,Admin Fee (10% rental),303.0,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,taxes,property_tax,Property Taxes,730.5,,The Palace,,pagado en split
+2025-08-01,2025-08,expense,maintenance,extras,Maintenance Extras,292.0,,The Palace,,pagado en split
+2025-08-01,2025-08,income,rental_income,fixed_rental,Fixed Rental Income,3030.0,,The Palace,,pagado en split
+2025-08-01,2025-08,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado en split
+2025-09-01,2025-09,expense,utilities,electricity,Electricity (IBERDROLA),100.02,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,utilities,internet,Internet (NOS),62.73,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,utilities,phone,Cell Phone (NOS),91.22,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,utilities,water,Water (SMAS),338.08,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,maintenance,garden,Garden,187.0,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,admin,admin_fee,Admin Fee (10% rental),294.0,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,cleaning,cleaning,Cleaning,50.0,,The Palace,,pagado en split
+2025-09-01,2025-09,expense,maintenance,extras,Maintenance Extras,7652.9,,The Palace,,pagado en split
+2025-09-01,2025-09,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,pagado en split
+2025-09-01,2025-09,income,rental_income,vilela_rental,Vilela Rental Income,850.0,,Vilela,,pagado en split
+2025-10-01,2025-10,expense,utilities,electricity,Electricity (IBERDROLA),110.71,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,utilities,phone,Cell Phone (NOS),27.14,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,utilities,water,Water (SMAS),189.57,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,admin,admin_fee,Admin Fee (10% rental),294.0,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,expense,maintenance,extras,Maintenance Extras,1365.0,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,pagado en Revolut
+2025-10-01,2025-10,income,rental_income,vilela_rental,Vilela Rental Income,800.0,,Vilela,,pagado en Revolut
+2025-11-01,2025-11,expense,utilities,electricity,Electricity (IBERDROLA),114.02,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,utilities,internet,Internet (NOS),55.8,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,utilities,phone,Cell Phone (NOS),21.89,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,utilities,water,Water (SMAS),205.79,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,admin,admin_fee,Admin Fee (10% rental),294.0,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,cleaning,cleaning,Cleaning,103.0,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,taxes,property_tax,Property Taxes,172.98,,The Palace,,pagado en split
+2025-11-01,2025-11,expense,maintenance,extras,Maintenance Extras,2047.86,,The Palace,,pagado en split
+2025-11-01,2025-11,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,pagado en split
+2025-11-01,2025-11,income,rental_income,vilela_rental,Vilela Rental Income,1000.0,,Vilela,,pagado en split
+2025-12-01,2025-12,expense,utilities,electricity,Electricity (IBERDROLA),144.44,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,utilities,internet,Internet (NOS),82.52,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,utilities,phone,Cell Phone (NOS),576.77,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,utilities,water,Water (SMAS),130.21,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,utilities,gas,Gas,122.5,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,admin,social_security,Social Security,302.33,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,salaries,management,Management Salary,870.0,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,admin,admin_fee,Admin Fee (10% rental),294.0,,The Palace,,pagado en split
+2025-12-01,2025-12,expense,insurance,property_insurance,Property Insurance (AGEAS),21.75,,The Palace,,pagado en split
+2025-12-01,2025-12,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,pagado en split
+2025-12-01,2025-12,income,rental_income,vilela_rental,Vilela Rental Income,1000.0,,Vilela,,pagado en split
+2026-01-01,2026-01,expense,utilities,electricity,Electricity (IBERDROLA),144.44,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,utilities,internet,Internet (NOS),576.77,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,utilities,phone,Cell Phone (NOS),82.52,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,utilities,water,Water (SMAS),184.57,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,admin,social_security,Social Security,302.33,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,salaries,management,Management Salary,870.0,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,admin,admin_fee,Admin Fee (10% rental),284.0,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,EN SPLIT
+2026-01-01,2026-01,expense,taxes,property_tax,Property Taxes,66.42,,The Palace,,EN SPLIT
+2026-01-01,2026-01,income,rental_income,fixed_rental,Fixed Rental Income,2840.0,,The Palace,,EN SPLIT
+2026-01-01,2026-01,income,rental_income,vilela_rental,Vilela Rental Income,1000.0,,Vilela,,EN SPLIT
+2026-02-01,2026-02,expense,utilities,electricity,Electricity (IBERDROLA),182.96,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,utilities,internet,Internet (NOS),52.09,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,utilities,phone,Cell Phone (NOS),25.6,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,utilities,water,Water (SMAS),164.63,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,utilities,gas,Gas,122.5,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,admin,social_security,Social Security,319.7,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,salaries,management,Management Salary,920.0,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,admin,admin_fee,Admin Fee (10% rental),294.0,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,EN SPLIT
+2026-02-01,2026-02,expense,maintenance,extras,Maintenance Extras,500.0,,The Palace,,EN SPLIT
+2026-02-01,2026-02,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,EN SPLIT
+2026-02-01,2026-02,income,rental_income,vilela_rental,Vilela Rental Income,1000.0,,Vilela,,EN SPLIT
+2026-03-01,2026-03,expense,utilities,electricity,Electricity (IBERDROLA),117.42,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,utilities,internet,Internet (NOS),56.88,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,utilities,phone,Cell Phone (NOS),30.0,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,admin,social_security,Social Security,319.7,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,admin,bank_fees,Bank Fees,15.0,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,salaries,management,Management Salary,920.0,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,admin,admin_fee,Admin Fee (10% rental),294.0,,The Palace,,EN SPLIT
+2026-03-01,2026-03,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,EN SPLIT
+2026-03-01,2026-03,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,EN SPLIT
+2026-03-01,2026-03,income,rental_income,vilela_rental,Vilela Rental Income,1000.0,,Vilela,,EN SPLIT
+2026-04-01,2026-04,expense,utilities,electricity,Electricity (IBERDROLA),89.53,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,utilities,internet,Internet (NOS),49.38,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,utilities,phone,Cell Phone (NOS),30.0,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,utilities,water,Water (SMAS),77.24,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,utilities,gas,Gas,142.5,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,admin,social_security,Social Security,319.7,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,admin,accountant,Accountant (Contabilidade),184.5,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,admin,bank_fees,Bank Fees,10.0,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,salaries,management,Management Salary,920.0,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,admin,admin_fee,Admin Fee (10% rental),404.0,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,insurance,property_insurance,Property Insurance (AGEAS),20.97,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,taxes,property_tax,Property Taxes,7.86,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,expense,maintenance,extras,Maintenance Extras,155.0,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-04-01,2026-04,income,rental_income,vilela_rental,Vilela Rental Income,1100.0,,Vilela,,PAGADO (MERU BLACK COMPENSADO CON LA DIFERENCIA DE  + VILELA MAMA)
+2026-05-01,2026-05,expense,admin,admin_fee,Admin Fee (10% rental),294.0,,The Palace,,
+2026-05-01,2026-05,expense,taxes,property_tax,Property Taxes,187.66,,The Palace,,
+2026-05-01,2026-05,income,rental_income,fixed_rental,Fixed Rental Income,2940.0,,The Palace,,
