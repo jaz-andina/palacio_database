@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { supabase } from '@/lib/supabase'
 import { Transaction } from '@/types/transaction'
+import { logout } from '@/app/actions/auth'
 
 const OPENING_BALANCE = 14226.82
 const OPENING_DATE = '2026-05-07'
@@ -157,7 +158,17 @@ export default function TransactionsPage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Property Management</h1>
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-2xl font-bold">Property Management</h1>
+        <form action={logout}>
+          <button
+            type="submit"
+            className="text-sm text-gray-500 hover:text-gray-800 border border-gray-300 rounded px-3 py-1"
+          >
+            Sign out
+          </button>
+        </form>
+      </div>
 
       {/* Balance Summary */}
       <div className="grid grid-cols-3 gap-4 mb-8">
