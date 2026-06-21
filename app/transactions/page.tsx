@@ -27,6 +27,43 @@ const CATEGORIES = [
   'Alquiler',
 ]
 
+// Tenants who can be selected as "Paid By" for Alquiler (rental income) transactions
+const ALQUILER_PAYERS = ['Brenda', 'Ida', 'Mili']
+
+const MONTHS_ES = [
+  'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+  'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre',
+]
+
+// Sube una copia del receipt a Google Drive (vía /api/receipts → Apps Script),
+// organizándolo en <año>/<mes> según la fecha de la transacción. Lanza error si falla.
+async function uploadReceiptToDrive(file: File, dateStr: string, description: string) {
+  const d = dateStr || new Date().toISOString().slice(0, 10) // 'YYYY-MM-DD'
+  const year = d.slice(0, 4)
+  const monthNum = d.slice(5, 7)
+  const monthName = MONTHS_ES[parseInt(monthNum, 10) - 1] ?? monthNum
+  const ext = file.name.split('.').pop()
+  const safe = (description || 'receipt').replace(/[^a-zA-Z0-9.-]/g, '_')
+
+  const fd = new FormData()
+  fd.append('file', file)
+  fd.append('year', year)
+  fd.append('month', `${monthNum} ${monthName}`) // ej: "06 Junio" (ordena cronológicamente)
+  fd.append('filename', `${d}-${safe}.${ext}`)
+
+  const res = await fetch('/api/receipts', { method: 'POST', body: fd })
+  if (!res.ok) {
+    const out = await res.json().catch(() => ({}))
+    throw new Error(out.error || 'Drive upload failed')
+  }
+}
+
+// Fecha local de hoy en formato 'YYYY-MM-DD' (sin desfase de zona horaria)
+function todayStr() {
+  const d = new Date()
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
+
 const emptyForm = {
   date: '',
   type: '',
@@ -38,6 +75,95 @@ const emptyForm = {
   notes: '',
 }
 
+const UTILITY_CATEGORIES = ['electricidad', 'gas', 'agua', 'internet', 'jardin']
+const SEGURO_CATEGORIES = ['seguro', 'insurance']
+const ADMIN_TAX_FIXED_CATEGORIES = ['social security', 'contabilidad', 'bank fees', 'impuestos']
+
+// Única fuente de verdad de los totales de las cajas del mes actual.
+// La usan tanto el dashboard como la sincronización al Google Sheet.
+function monthlyBoxes(transactions: Transaction[]) {
+  const now = new Date()
+  const currentYearMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`
+
+  const isSeguro = (t: Transaction) => SEGURO_CATEGORIES.includes(t.category?.toLowerCase())
+  // El seguro se prorratea: última transacción de seguro (mayor id) / 12.
+  const lastSeguro = transactions
+    .filter(isSeguro)
+    .reduce<Transaction | null>((latest, t) => (!latest || t.id > latest.id ? t : latest), null)
+  const monthlySeguro = lastSeguro ? Math.abs(lastSeguro.amount) / 12 : 0
+
+  const monthlyTransactions = transactions.filter((t) => t.date.startsWith(currentYearMonth))
+  const monthlyIncome = monthlyTransactions
+    .filter((t) => t.type === 'Income')
+    .reduce((s, t) => s + t.amount, 0)
+
+  // Gastos del mes: excluye seguro puntual y suma el seguro prorrateado.
+  const monthlyExpenses =
+    monthlyTransactions
+      .filter((t) => t.type === 'Expense' && !isSeguro(t))
+      .reduce((s, t) => s + t.amount, 0) + monthlySeguro
+
+  const monthlyUtilities =
+    Math.abs(
+      monthlyTransactions
+        .filter((t) => UTILITY_CATEGORIES.includes(t.category?.toLowerCase()))
+        .reduce((s, t) => s + t.amount, 0)
+    ) + monthlySeguro
+
+  const monthlyAdminFixed = monthlyTransactions
+    .filter((t) => ADMIN_TAX_FIXED_CATEGORIES.includes(t.category?.toLowerCase()))
+    .reduce((s, t) => s + t.amount, 0)
+  const monthlyAdminTax = Math.abs(monthlyAdminFixed + (monthlyIncome * 0.1 + 110))
+
+  const monthlyMantenimiento = Math.abs(
+    monthlyTransactions
+      .filter((t) => t.category?.toLowerCase() === 'mantenimiento')
+      .reduce((s, t) => s + t.amount, 0)
+  )
+
+  // Total de agua del mes (va a la fila 42 del Sheet, columna del mes).
+  const monthlyAgua = Math.abs(
+    monthlyTransactions
+      .filter((t) => t.category?.toLowerCase() === 'agua')
+      .reduce((s, t) => s + t.amount, 0)
+  )
+
+  return {
+    monthName: MONTHS_ES[now.getMonth()],
+    monthlyIncome,
+    monthlyExpenses,
+    monthlyUtilities,
+    monthlyAdminTax,
+    monthlyMantenimiento,
+    monthlyAgua,
+  }
+}
+
+// Envía los 4 totales del mes actual al Google Sheet (vía /api/sheet → Apps Script).
+// No lanza: si falla, devuelve el error como string para mostrarlo sin romper el flujo.
+async function syncTotalsToSheet(transactions: Transaction[]): Promise<string | null> {
+  const b = monthlyBoxes(transactions)
+  try {
+    const res = await fetch('/api/sheet', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        month: b.monthName,
+        utilities: Number(b.monthlyUtilities.toFixed(2)),
+        mantenimiento: Number(b.monthlyMantenimiento.toFixed(2)),
+        adminImpuestos: Number(b.monthlyAdminTax.toFixed(2)),
+        realesTotales: Number(b.monthlyExpenses.toFixed(2)),
+        agua: Number(b.monthlyAgua.toFixed(2)),
+      }),
+    })
+    const out = await res.json().catch(() => ({}))
+    if (!res.ok || !out.ok) return out.error || `Sheet sync failed (HTTP ${res.status})`
+    return null
+  } catch (err) {
+    return String(err)
+  }
+}
+
 export default function TransactionsPage() {
   const [transactions, setTransactions] = useState<Transaction[]>([])
   const [loading, setLoading] = useState(true)
@@ -47,6 +173,11 @@ export default function TransactionsPage() {
   const [submitError, setSubmitError] = useState<string | null>(null)
   const [receipt, setReceipt] = useState<File | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const [rowUploadingId, setRowUploadingId] = useState<number | null>(null)
+  const rowFileInputRef = useRef<HTMLInputElement>(null)
+  const pendingRowRef = useRef<Transaction | null>(null)
+  const [csvFrom, setCsvFrom] = useState('')
+  const [csvTo, setCsvTo] = useState('')
 
   async function fetchTransactions() {
     setLoading(true)
@@ -61,15 +192,110 @@ export default function TransactionsPage() {
       setTransactions(data || [])
     }
     setLoading(false)
+    return data || []
   }
 
   useEffect(() => {
     fetchTransactions()
+    // Default de la fecha = hoy (editable por el usuario). Se setea en el cliente
+    // para evitar mismatch de hidratación.
+    setForm((f) => ({ ...f, date: todayStr() }))
   }, [])
 
   async function handleDelete(id: number) {
     await supabase.from('transactions').delete().eq('id', id)
-    setTransactions((prev) => prev.filter((t) => t.id !== id))
+    const next = transactions.filter((t) => t.id !== id)
+    setTransactions(next)
+    // Borrar también cambia los totales del mes → re-sincronizamos el Sheet.
+    const sheetErr = await syncTotalsToSheet(next)
+    if (sheetErr) setError(`Transacción borrada, pero no se pudo actualizar el Sheet: ${sheetErr}`)
+  }
+
+  // Exporta todas las transacciones visibles a un archivo CSV descargable
+  function handleDownloadCSV() {
+    const headers = ['Date', 'Category', 'Type', 'Description', 'Amount', 'Paid By', 'Belongs To', 'Notes', 'Receipt']
+    const escape = (v: unknown) => {
+      const s = v === null || v === undefined ? '' : String(v)
+      return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+    }
+    // Filtramos por el rango de fechas elegido (las fechas son ISO 'YYYY-MM-DD',
+    // así que la comparación de strings funciona). Cualquier campo vacío = sin límite.
+    const filtered = transactions.filter((t) => {
+      if (csvFrom && t.date < csvFrom) return false
+      if (csvTo && t.date > csvTo) return false
+      return true
+    })
+    if (filtered.length === 0) {
+      alert('No hay transacciones en el rango de fechas seleccionado.')
+      return
+    }
+    const rows = filtered.map((t) =>
+      [t.date, t.category, t.type, t.description, t.amount, t.paid_by, t.belongs_to, t.notes, t.invoice_url]
+        .map(escape)
+        .join(',')
+    )
+    // BOM para que Excel respete los acentos (€, ñ, etc.)
+    const csv = '﻿' + [headers.join(','), ...rows].join('\n')
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `transactions-${new Date().toISOString().slice(0, 10)}.csv`
+    a.click()
+    URL.revokeObjectURL(url)
+  }
+
+  // Opens the hidden file picker for a specific row (attach or replace its receipt)
+  function openRowReceiptPicker(t: Transaction) {
+    pendingRowRef.current = t
+    if (rowFileInputRef.current) {
+      rowFileInputRef.current.value = ''
+      rowFileInputRef.current.click()
+    }
+  }
+
+  // Uploads the chosen file to the `receipts` bucket and saves its public URL on the row
+  async function handleRowReceipt(t: Transaction, file: File) {
+    setRowUploadingId(t.id)
+    setError(null)
+    const ext = file.name.split('.').pop()
+    const safeName = (t.description || 'receipt').replace(/[^a-zA-Z0-9.-]/g, '_')
+    const path = `${Date.now()}-${safeName}.${ext}`
+
+    const { error: uploadError } = await supabase.storage
+      .from('receipts')
+      .upload(path, file)
+    if (uploadError) {
+      setError(`Receipt upload failed: ${uploadError.message}`)
+      setRowUploadingId(null)
+      return
+    }
+
+    const { data: urlData } = supabase.storage.from('receipts').getPublicUrl(path)
+    const newUrl = urlData.publicUrl
+
+    const { error: updateError } = await supabase
+      .from('transactions')
+      .update({ invoice_url: newUrl })
+      .eq('id', t.id)
+    if (updateError) {
+      setError(`Could not save receipt: ${updateError.message}`)
+      setRowUploadingId(null)
+      return
+    }
+
+    setTransactions((prev) =>
+      prev.map((x) => (x.id === t.id ? { ...x, invoice_url: newUrl } : x))
+    )
+
+    // Copia adicional a Google Drive. No revertimos el receipt si Drive falla.
+    try {
+      await uploadReceiptToDrive(file, t.date, t.description)
+    } catch (err) {
+      setError(`Receipt guardado, pero no se pudo subir a Drive: ${String(err)}`)
+    }
+
+    setRowUploadingId(null)
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -77,26 +303,54 @@ export default function TransactionsPage() {
     setSubmitting(true)
     setSubmitError(null)
 
+    let invoiceUrl: string | null = null
+    let driveFailed: string | null = null
     if (receipt) {
       const ext = receipt.name.split('.').pop()
-      const path = `${Date.now()}-${form.description || 'receipt'}.${ext}`
-      await supabase.storage.from('receipts').upload(path, receipt)
+      const safeName = (form.description || 'receipt').replace(/[^a-zA-Z0-9.-]/g, '_')
+      const path = `${Date.now()}-${safeName}.${ext}`
+      const { error: uploadError } = await supabase.storage
+        .from('receipts')
+        .upload(path, receipt)
+      if (uploadError) {
+        setSubmitError(`Receipt upload failed: ${uploadError.message}`)
+        setSubmitting(false)
+        return
+      }
+      const { data: urlData } = supabase.storage.from('receipts').getPublicUrl(path)
+      invoiceUrl = urlData.publicUrl
+
+      // Copia adicional a Google Drive. No bloqueamos la transacción si Drive falla.
+      try {
+        await uploadReceiptToDrive(receipt, form.date, form.description)
+      } catch (err) {
+        driveFailed = String(err)
+      }
     }
 
     const { error } = await supabase.from('transactions').insert([
       {
         ...form,
         amount: parseFloat(form.amount),
+        invoice_url: invoiceUrl,
       },
     ])
 
     if (error) {
       setSubmitError(error.message)
     } else {
-      setForm(emptyForm)
+      setForm({ ...emptyForm, date: todayStr() })
       setReceipt(null)
       if (fileInputRef.current) fileInputRef.current.value = ''
-      await fetchTransactions()
+      const fresh = await fetchTransactions()
+      const sheetErr = await syncTotalsToSheet(fresh)
+      const warnings = [
+        driveFailed && `no se pudo subir a Drive: ${driveFailed}`,
+        sheetErr && `no se pudo actualizar el Sheet: ${sheetErr}`,
+      ].filter(Boolean)
+      setSubmitError(
+        warnings.length ? `Transacción guardada, pero ${warnings.join(' y ')}.` : null
+      )
     }
     setSubmitting(false)
   }
@@ -108,7 +362,14 @@ export default function TransactionsPage() {
     const updates: Partial<typeof emptyForm> = { [name]: value }
     if (name === 'category') {
       updates.belongs_to = value === 'Celular Jaz' ? 'jaz' : 'meruprop'
-      updates.paid_by = value === 'Agua' ? 'jaz' : 'Meruprop'
+      updates.paid_by =
+        value === 'Agua' || value === 'Celular Jaz'
+          ? 'jaz'
+          : value === 'Social Security' || value === 'Impuestos'
+            ? 'Meruprop to Jaz'
+            : value === 'Alquiler'
+              ? '' // tenant is chosen from the Brenda/Ida/Mili dropdown
+              : 'Meruprop'
       updates.type = value === 'Alquiler' ? 'Income' : 'Expense'
       if (value === 'Admin') {
         const ym = `${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}`
@@ -124,37 +385,19 @@ export default function TransactionsPage() {
   const inputClass =
     'w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white'
 
-  const now = new Date()
-  const currentYearMonth = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`
-
   const newTransactions = transactions.filter((t) => t.date > OPENING_DATE)
   const allIncome = newTransactions.filter((t) => t.type === 'Income').reduce((sum, t) => sum + t.amount, 0)
   const allExpenses = newTransactions.filter((t) => t.type === 'Expense').reduce((sum, t) => sum + t.amount, 0)
   const currentBalance = OPENING_BALANCE + allIncome - allExpenses
 
-  const monthlyTransactions = transactions.filter((t) => t.date.startsWith(currentYearMonth))
-  const monthlyIncome = monthlyTransactions.filter((t) => t.type === 'Income').reduce((sum, t) => sum + t.amount, 0)
-  const monthlyExpenses = monthlyTransactions.filter((t) => t.type === 'Expense').reduce((sum, t) => sum + t.amount, 0)
-
-  const UTILITY_CATEGORIES = ['electricidad', 'gas', 'agua', 'internet', 'jardin']
-  const monthlyUtilities = Math.abs(
-    monthlyTransactions
-      .filter((t) => UTILITY_CATEGORIES.includes(t.category?.toLowerCase()))
-      .reduce((sum, t) => sum + t.amount, 0)
-  )
-
-  const ADMIN_TAX_FIXED_CATEGORIES = ['social security', 'contabilidad', 'bank fees', 'impuestos']
-  const monthlyAdminFixed = monthlyTransactions
-    .filter((t) => ADMIN_TAX_FIXED_CATEGORIES.includes(t.category?.toLowerCase()))
-    .reduce((sum, t) => sum + t.amount, 0)
-  const calculatedAdmin = monthlyIncome * 0.1 + 110
-  const monthlyAdminTax = Math.abs(monthlyAdminFixed + calculatedAdmin)
-
-  const monthlyMantenimiento = Math.abs(
-    monthlyTransactions
-      .filter((t) => t.category?.toLowerCase() === 'mantenimiento')
-      .reduce((sum, t) => sum + t.amount, 0)
-  )
+  const {
+    monthlyIncome,
+    monthlyExpenses,
+    monthlyUtilities,
+    monthlyAdminTax,
+    monthlyMantenimiento,
+  } = monthlyBoxes(transactions)
+  const monthlyProfit = monthlyIncome - monthlyExpenses
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
@@ -171,7 +414,7 @@ export default function TransactionsPage() {
       </div>
 
       {/* Balance Summary */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
         <div className="bg-white border border-gray-200 rounded-lg p-4">
           <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Current Balance</p>
           <p className={`text-2xl font-bold ${currentBalance >= 0 ? 'text-gray-900' : 'text-red-600'}`}>
@@ -186,6 +429,12 @@ export default function TransactionsPage() {
           <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Monthly Expenses</p>
           <p className="text-2xl font-bold text-red-600">€{monthlyExpenses.toFixed(2)}</p>
         </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-4">
+          <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Monthly Profit</p>
+          <p className={`text-2xl font-bold ${monthlyProfit >= 0 ? 'text-green-600' : 'text-red-600'}`}>
+            €{monthlyProfit.toFixed(2)}
+          </p>
+        </div>
       </div>
 
       {/* Monthly Subtotals */}
@@ -193,7 +442,7 @@ export default function TransactionsPage() {
         <div className="bg-white border border-gray-200 rounded-lg p-4">
           <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Monthly Utilities</p>
           <p className="text-2xl font-bold text-orange-600">€{monthlyUtilities.toFixed(2)}</p>
-          <p className="text-xs text-gray-400 mt-1">Electricidad · Gas · Agua · Internet · Jardin</p>
+          <p className="text-xs text-gray-400 mt-1">Electricidad · Gas · Agua · Internet · Jardin · Seguro/12</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-lg p-4">
           <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Monthly Admin & Taxes</p>
@@ -248,7 +497,16 @@ export default function TransactionsPage() {
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Paid By</label>
-            <input name="paid_by" type="text" value={form.paid_by} onChange={handleChange} className={inputClass} />
+            {form.category === 'Alquiler' ? (
+              <select name="paid_by" value={form.paid_by} onChange={handleChange} className={inputClass}>
+                <option value="">Select tenant</option>
+                {ALQUILER_PAYERS.map((p) => (
+                  <option key={p} value={p}>{p}</option>
+                ))}
+              </select>
+            ) : (
+              <input name="paid_by" type="text" value={form.paid_by} onChange={handleChange} className={inputClass} />
+            )}
           </div>
 
           <div>
@@ -296,7 +554,61 @@ export default function TransactionsPage() {
 
       {/* Transactions Table */}
       <section>
-        <h2 className="text-lg font-semibold mb-4">All Transactions</h2>
+        <div className="flex items-center justify-between mb-4 gap-3 flex-wrap">
+          <h2 className="text-lg font-semibold">All Transactions</h2>
+          <div className="flex items-center gap-2">
+            <label className="text-xs text-gray-500">Desde</label>
+            <input
+              type="date"
+              value={csvFrom}
+              max={csvTo || undefined}
+              onChange={(e) => setCsvFrom(e.target.value)}
+              className="text-sm border border-gray-300 rounded px-2 py-1"
+            />
+            <label className="text-xs text-gray-500">Hasta</label>
+            <input
+              type="date"
+              value={csvTo}
+              min={csvFrom || undefined}
+              onChange={(e) => setCsvTo(e.target.value)}
+              className="text-sm border border-gray-300 rounded px-2 py-1"
+            />
+            {(csvFrom || csvTo) && (
+              <button
+                type="button"
+                onClick={() => {
+                  setCsvFrom('')
+                  setCsvTo('')
+                }}
+                className="text-xs text-gray-400 hover:text-gray-700"
+                title="Limpiar filtro de fechas"
+              >
+                Limpiar
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={handleDownloadCSV}
+              disabled={transactions.length === 0}
+              className="text-sm bg-gray-800 text-white rounded px-3 py-1.5 hover:bg-gray-900 disabled:opacity-50"
+            >
+              Descargar CSV
+            </button>
+          </div>
+        </div>
+
+        {/* Shared hidden picker used by every row's Attach/Replace Receipt button */}
+        <input
+          ref={rowFileInputRef}
+          type="file"
+          accept=".pdf,.png,.jpg,.jpeg,image/*"
+          className="hidden"
+          onChange={(e) => {
+            const file = e.target.files?.[0]
+            const t = pendingRowRef.current
+            if (file && t) handleRowReceipt(t, file)
+          }}
+        />
 
         {loading && <p className="text-gray-500 text-sm">Loading transactions...</p>}
 
@@ -315,7 +627,7 @@ export default function TransactionsPage() {
             <table className="min-w-full text-sm border border-gray-200 rounded">
               <thead className="bg-gray-100 text-gray-700">
                 <tr>
-                  {['Date', 'Category', 'Type', 'Description', 'Amount', 'Paid By', 'Belongs To', 'Notes', ''].map(
+                  {['Date', 'Category', 'Type', 'Description', 'Amount', 'Paid By', 'Belongs To', 'Notes', 'Receipt', ''].map(
                     (h) => (
                       <th key={h} className="text-left px-3 py-2 whitespace-nowrap font-medium">
                         {h}
@@ -337,6 +649,33 @@ export default function TransactionsPage() {
                     <td className="px-3 py-2 whitespace-nowrap">{t.paid_by}</td>
                     <td className="px-3 py-2 whitespace-nowrap">{t.belongs_to}</td>
                     <td className="px-3 py-2 text-gray-500">{t.notes}</td>
+                    <td className="px-3 py-2 whitespace-nowrap">
+                      <div className="flex items-center gap-2">
+                        {t.invoice_url && (
+                          <a
+                            href={t.invoice_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                            title="Open receipt"
+                          >
+                            View Receipt
+                          </a>
+                        )}
+                        <button
+                          type="button"
+                          onClick={() => openRowReceiptPicker(t)}
+                          disabled={rowUploadingId === t.id}
+                          className="text-xs text-gray-500 hover:text-gray-800 border border-gray-300 rounded px-2 py-1 disabled:opacity-50"
+                        >
+                          {rowUploadingId === t.id
+                            ? 'Uploading…'
+                            : t.invoice_url
+                              ? 'Replace Receipt'
+                              : 'Attach Receipt'}
+                        </button>
+                      </div>
+                    </td>
                     <td className="px-3 py-2">
                       <button
                         onClick={() => handleDelete(t.id)}
